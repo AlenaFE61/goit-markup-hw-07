@@ -826,7 +826,12 @@ address {
   position: relative;
   overflow: hidden;
 }
-.cards-list .cards-list-item .cards-img-wrapp .cards-text {
+
+.cards-list-item:hover .cards-text {
+  transform: translateY(0);
+}
+
+.cards-text {
   position: absolute;
   width: 370px;
   height: 100%;
@@ -841,23 +846,28 @@ address {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.cards-list-item:hover .cards-list .cards-list-item .cards-img-wrapp .cards-text {
-  transform: translateY(0);
-}
-.cards-list .cards-list-item:nth-child(3n) {
+
+.cards-list-item:nth-child(3n) {
   margin-right: 0;
 }
-.cards-list .cards-list-item:hover, .cards-list .cards-list-item:focus {
+
+.cards-list-item:hover,
+.cards-list-item:focus {
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.cards-list .cards-list-item .our-projects {
+
+a {
+  text-decoration: none;
+}
+
+.our-projects {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 25px;
 }
-.cards-list .cards-list-item .our-projects .title-project {
+.our-projects .title-project {
   padding-bottom: 4px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -865,7 +875,7 @@ address {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.cards-list .cards-list-item .our-projects .text-project {
+.our-projects .text-project {
   font-size: 16px;
   line-height: 1.8;
 }/*# sourceMappingURL=main.css.map */
