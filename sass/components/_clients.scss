@@ -33,12 +33,12 @@
   }
 }
 
-.clients-link:hover,
-.clients-link:focus{
+.clients__link:hover,
+.clients__link:focus{
   border: 1px solid var(--accent-color);
 }
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon{
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon{
   fill:var(--accent-color);
 }
 
